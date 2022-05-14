@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: es-with-sudachi-crowi
   ELASTIC_VER: 6.8.9
   SUDACHI_VER: 0.5.3-SNAPSHOT
-  SUDACHI_PLUGIN_VER: 2.0.2-SNAPSHOT
+  SUDACHI_PLUGIN_VER: 2.1.1-SNAPSHOT
 
 jobs:
   build-image:
