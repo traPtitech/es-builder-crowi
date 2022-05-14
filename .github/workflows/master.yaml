@@ -49,6 +49,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: WorksApplications/elasticsearch-sudachi
+          ref: 4947d043d35a4a94a5f8395d726901428c1f1cc1
           path: elasticsearch-sudachi
       - name: Check elasticsearch-sudachi ver
         id: check-es-sudachi-ver
