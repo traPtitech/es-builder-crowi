@@ -70,7 +70,7 @@ jobs:
       - name: Build distZip
         run: |
           cd elasticsearch-sudachi
-          ./gradlew -q -PelasticsearchVersion=${ELASTIC_VER} distZip
+          ./gradlew -q -PelasticsearchVersion=6.8.9 distZip
 
       - uses: actions/checkout@v2
         with:
