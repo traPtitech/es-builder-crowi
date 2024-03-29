@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_NAME: es-with-sudachi-crowi
-  ELASTIC_VER: 8.8.1
+  ELASTIC_VER: 7.10.2
   SUDACHI_VER: 0.5.3-SNAPSHOT
   SUDACHI_PLUGIN_VER: 3.1.0
 
@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: WorksApplications/Sudachi
-          ref: 3573ddaaf441a5ea042caa2ecee3f87d7eaf7089
+          ref: cabfc87663f3d51e943e64008a4c2d1b26fca423
           path: Sudachi
       - name: Check sudachi ver
         id: check-sudachi-ver
@@ -49,7 +49,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: WorksApplications/elasticsearch-sudachi
-          ref: 41c38a4c3a73ab475ae25d9fc3e2fda01776dffa
+          ref: 60a790e811abc680f0aa7a90859cd8641bc18d99
           path: elasticsearch-sudachi
       - name: Check elasticsearch-sudachi ver
         id: check-es-sudachi-ver
@@ -70,7 +70,7 @@ jobs:
       - name: Build distZip
         run: |
           cd elasticsearch-sudachi
-          ./gradlew -q -PelasticsearchVersion=8.8.1 distZip
+          ./gradlew -q -PelasticsearchVersion=7.10.2 distZip
 
       - uses: actions/checkout@v2
         with:
